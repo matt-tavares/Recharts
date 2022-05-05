@@ -16,24 +16,6 @@ export default function GraphictQtdProfPorEstadoCivil(props: defSource) {
     const [data, setData] = useState<QtdProfPorEstadoCivil[]>([])
     const [isLoading, setIsLoading] = useState(true)
 
-    function getEstadoCivil(ec: string) {
-        switch (ec) {
-            case 's':
-                return 'Solteiro'
-                break
-            
-            case 'c':
-                return 'Casado'
-                break
-
-            case 'd':
-                return 'Divorciado'
-                break
-            default:
-                return ''
-        }
-    }
-
     useEffect(() => {
         async function QtdProfPorEstadoCivil() {
 
@@ -45,7 +27,7 @@ export default function GraphictQtdProfPorEstadoCivil(props: defSource) {
 
                 for ( let i = 0; i < data.length; i++)
                     tapData.push( {
-                        estado_civil: getEstadoCivil(data[i].estado_civil),
+                        estado_civil: data[i].estado_civil,
                         quantidade: parseInt(String(data[i].quantidade))
                     
                     })

@@ -7,7 +7,7 @@ import GraphictQtdReprovacoesPorAno from './GraphictQtdReprovacoesPorAno'
 
 function App() {
     return <>  
-                <STitle> EXERCÍCIOS ACERCA DE GRÁFICOS </STitle>
+                <STitle> GRÁFICOS </STitle>
                 <GraphictQtdCursosPorInstituicao url='http://localhost:8080/curso/qtdp/byinstituicao'/>
                 <GraphictQtdDisciplinasPorProfessor url='http://localhost:8080/professor/qtd/ofdisciplina'/>
                 <GraphictQtdProfPorEstadoCivil url='http://localhost:8080/professor/qtd/byestadocivil'/>

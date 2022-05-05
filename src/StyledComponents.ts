@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const STitle = styled.h2`
     margin: auto 0;
-    margin-top: 60px;
+    margin-top: 10px;
     text-align: center;
     padding: 10px;
     color: #1A2026;
